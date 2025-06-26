@@ -3,11 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>Đăng nhập</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 300px;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #f67280;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c94f60;
+    }
+    #error {
+      color: red;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h2>Vui lòng nhập mật khẩu</h2>
-  <input type="password" id="password" placeholder="Mật khẩu">
-  <button onclick="checkPassword()">Đăng nhập</button>
+  <div class="login-box">
+    <h2>Đăng nhập vào Web của Nguyên</h2>
+    <input type="password" id="password" placeholder="Nhập mật khẩu...">
+    <button onclick="checkPassword()">Vào Web</button>
+    <div id="error"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
