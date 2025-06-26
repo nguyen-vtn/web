@@ -3,6 +3,6 @@ function checkPassword() {
   if (password === "12345") {
     window.location.href = "home.html";
   } else {
-    alert("Sai mật khẩu!");
+    document.getElementById("error").innerText = "Sai mật khẩu!";
   }
 }
